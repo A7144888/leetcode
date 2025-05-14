@@ -28,3 +28,6 @@
 	<li>All the integers in <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted in ascending order.</li>
 </ul>
+
+<a><mark>心得</mark></a>
+很直觀的binary search，主要是條件區間是'[left,right]'還是'[left,right)'，像我用.size()的話就是後者，原因在那行的註解裡
