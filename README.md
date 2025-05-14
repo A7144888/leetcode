@@ -15,6 +15,7 @@
 |  |
 | ------- |
 | [0605-can-place-flowers](https://github.com/A7144888/leetcode/tree/master/0605-can-place-flowers) |
+| [0792-binary-search](https://github.com/A7144888/leetcode/tree/master/0792-binary-search) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/A7144888/leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 ## Greedy
 |  |
@@ -24,4 +25,8 @@
 |  |
 | ------- |
 | [0345-reverse-vowels-of-a-string](https://github.com/A7144888/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
+## Binary Search
+|  |
+| ------- |
+| [0792-binary-search](https://github.com/A7144888/leetcode/tree/master/0792-binary-search) |
 <!---LeetCode Topics End-->
