@@ -29,5 +29,10 @@
 	<li><code>nums</code> is sorted in ascending order.</li>
 </ul>
 
-<a><mark>心得</mark></a>
-很直觀的binary search，主要是條件區間是'[left,right]'還是'[left,right)'，像我用.size()的話就是後者，原因在那行的註解裡
+---
+
+***<mark>心得</mark>***
+
+很直觀的binary search，主要是條件區間是`[left,right]`還是`[left,right)`，像我用.size()的話就是**後者**，原因在那行的註解裡，而在條件判斷`if(nums[middle]>target)`這裡，因為不包含右邊界，所以直接讓 `right=middle` 而不用+-1， `else if(nums[middle]<target)` 則反之，要+1使下標middle不在查找的範圍內。
+
+<mark>也就是有[]就要+-1，有()則不用</mark>
