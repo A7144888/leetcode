@@ -1,5 +1,5 @@
 # leetcode 
-用來放答對的題目，心得在我的hackmd https://hackmd.io/?nav=overview
+用來放答對的題目，希望思路和心得能幫到大家
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Math
