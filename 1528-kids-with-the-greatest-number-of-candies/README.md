@@ -43,3 +43,33 @@ Kid 1 will always have the greatest number of candies, even if a different kid i
 	<li><code>1 &lt;= candies[i] &lt;= 100</code></li>
 	<li><code>1 &lt;= extraCandies &lt;= 50</code></li>
 </ul>
+
+
+---
+
+**<p style="font-size:24px;color:yellow">心得:</p>**
+思路應該就那樣:
+1. 找最大值
+2. `vector<bool>result`用來儲存結果並return
+3. 判斷true or false
+
+但我原本code長這樣
+```
+auto max=max_element(candies.begin(),candies.end());
+        for(int i=0;i<candies.size();i++){
+            if(candies[i]+extraCandies>max||candies[i]+extraCandies==max){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+```
+會編譯錯誤，問了gpt是因為:
+1.返回類型不匹配： 方法應該返回一個vector<bool>類型的結果，但在你的實現中，你嘗試返回bool類型的值。 您應該建構並傳回一個vector<bool> 。
+
+2.max 使用錯誤： 是一個反覆運算器，指向vector中的最大元素。 如果你想比較 和最大值，你需要解引用(*)以獲取最大值。(max_element前面要加 *)
+
+3.錯誤的返回邏輯： 在迴圈中，你對每個元素進行檢查，並在第一次檢查後返回 或 。 這樣，函數只會檢查第一個元素的條件，而不會遍曆整個迴圈 。 你應該在循環結束後返回結果。(也就是返回之後就不繼續跑了)
+    
+然後記得`vector<bool> result`要在這後面設定他的大小:`vector<bool> result(candies.size())`
