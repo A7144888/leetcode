@@ -56,3 +56,54 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 	<li><code>0 &lt;= nums[i] &lt;= 50</code></li>
 	<li><code>0 &lt;= val &lt;= 100</code></li>
 </ul>
+
+---
+
+***<mark>心得</mark>***
+
+一開始想用
+```
+	for(int i=0;i<nums.size();i++){
+            if(nums[i]==val){
+             nums.erase(nums.begin() + i) ;
+            } 
+        }
+```
+後來run了一次才發現碰到連續==val時會因為i++了而下一個val值不在原本的index的情況
+###### btw順便學到erase會改變大小不改變容量，remove則都不變，算是意外的收穫吧
+
+原本的想法是暴力解，爬文得知這樣能過但複雜度太高，懶得多寫引用一下代碼隨想錄大大的
+```
+	// 时间复杂度：O(n^2)
+	// 空间复杂度：O(1)
+	class Solution {
+	public:
+	    int removeElement(vector<int>& nums, int val) {
+	        int size = nums.size();
+	        for (int i = 0; i < size; i++) {
+	            if (nums[i] == val) { // 发现需要移除的元素，就将数组集体向前移动一位
+	                for (int j = i + 1; j < size; j++) {
+	                    nums[j - 1] = nums[j];
+	                }
+	                i--; // 因为下标i以后的数值都向前移动了一位，所以i也向前移动一位
+	                size--; // 此时数组的大小-1
+	            }
+	        }
+	        return size;
+	
+	    }
+	};
+```
+也是看了他的講解才知道可以用雙指針，在這題長這樣
+```
+	int fast,slow;
+	for(fast=0,slow=0;fast<nums.size();fast++){
+		if(nums[fast]!=val){
+			nums[slow]=nums[fast];
+			slow++;
+		}
+	 }
+	return slow;
+```
+時間複雜度O(n)、空間複雜度O(1)
+核心思想就是用fast slow兩個指<mark>分別遍歷array中每個元素和作為新的array的下標，只是都在這個nums[]上執行而已</mark>，這段的意思是把 ***「把其中的val值刪掉」反向想成「留下不是val值的元素」***，並把這些元素給到新的array，也就是用slow作為下標來維護的array。
