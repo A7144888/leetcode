@@ -19,6 +19,7 @@
 | [0027-remove-element](https://github.com/A7144888/leetcode/tree/master/0027-remove-element) |
 | [0605-can-place-flowers](https://github.com/A7144888/leetcode/tree/master/0605-can-place-flowers) |
 | [0792-binary-search](https://github.com/A7144888/leetcode/tree/master/0792-binary-search) |
+| [1019-squares-of-a-sorted-array](https://github.com/A7144888/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/A7144888/leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 ## Greedy
 |  |
@@ -29,8 +30,13 @@
 | ------- |
 | [0027-remove-element](https://github.com/A7144888/leetcode/tree/master/0027-remove-element) |
 | [0345-reverse-vowels-of-a-string](https://github.com/A7144888/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
+| [1019-squares-of-a-sorted-array](https://github.com/A7144888/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 ## Binary Search
 |  |
 | ------- |
 | [0792-binary-search](https://github.com/A7144888/leetcode/tree/master/0792-binary-search) |
+## Sorting
+|  |
+| ------- |
+| [1019-squares-of-a-sorted-array](https://github.com/A7144888/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 <!---LeetCode Topics End-->
