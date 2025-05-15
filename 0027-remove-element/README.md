@@ -72,7 +72,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 後來run了一次才發現碰到連續==val時會因為i++了而下一個val值不在原本的index的情況
 ###### btw順便學到erase會改變大小不改變容量，remove則都不變，算是意外的收穫吧
 
-原本的想法是暴力解，爬文得知這樣能過但複雜度太高，懶得多寫引用一下代碼隨想錄大大的
+原本的想法是暴力解，爬文得知這樣能過但複雜度太高，懶得多寫引用一下代碼隨想錄的
 ```
 	// 时间复杂度：O(n^2)
 	// 空间复杂度：O(1)
