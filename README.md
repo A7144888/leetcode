@@ -1,5 +1,7 @@
 # leetcode 
-用來放答對的題目，希望思路和心得能幫到大家
+用來放答對的題目，希望思路和心得能幫到大家，目前在跟著yangyang04大大的代碼隨想錄 leetcode刷題攻略學習中，會寫這些也是想教學相長，鞏固所學
+
+[刷題攻略](https://github.com/youngyangyang04/leetcode-master)
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Math
