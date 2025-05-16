@@ -17,6 +17,7 @@
 |  |
 | ------- |
 | [0027-remove-element](https://github.com/A7144888/leetcode/tree/master/0027-remove-element) |
+| [0209-minimum-size-subarray-sum](https://github.com/A7144888/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0605-can-place-flowers](https://github.com/A7144888/leetcode/tree/master/0605-can-place-flowers) |
 | [0792-binary-search](https://github.com/A7144888/leetcode/tree/master/0792-binary-search) |
 | [1019-squares-of-a-sorted-array](https://github.com/A7144888/leetcode/tree/master/1019-squares-of-a-sorted-array) |
@@ -34,9 +35,18 @@
 ## Binary Search
 |  |
 | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/A7144888/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0792-binary-search](https://github.com/A7144888/leetcode/tree/master/0792-binary-search) |
 ## Sorting
 |  |
 | ------- |
 | [1019-squares-of-a-sorted-array](https://github.com/A7144888/leetcode/tree/master/1019-squares-of-a-sorted-array) |
+## Sliding Window
+|  |
+| ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/A7144888/leetcode/tree/master/0209-minimum-size-subarray-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/A7144888/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 <!---LeetCode Topics End-->
