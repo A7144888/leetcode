@@ -17,6 +17,7 @@
 |  |
 | ------- |
 | [0027-remove-element](https://github.com/A7144888/leetcode/tree/master/0027-remove-element) |
+| [0059-spiral-matrix-ii](https://github.com/A7144888/leetcode/tree/master/0059-spiral-matrix-ii) |
 | [0209-minimum-size-subarray-sum](https://github.com/A7144888/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0605-can-place-flowers](https://github.com/A7144888/leetcode/tree/master/0605-can-place-flowers) |
 | [0792-binary-search](https://github.com/A7144888/leetcode/tree/master/0792-binary-search) |
@@ -49,4 +50,12 @@
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/A7144888/leetcode/tree/master/0209-minimum-size-subarray-sum) |
+## Matrix
+|  |
+| ------- |
+| [0059-spiral-matrix-ii](https://github.com/A7144888/leetcode/tree/master/0059-spiral-matrix-ii) |
+## Simulation
+|  |
+| ------- |
+| [0059-spiral-matrix-ii](https://github.com/A7144888/leetcode/tree/master/0059-spiral-matrix-ii) |
 <!---LeetCode Topics End-->
