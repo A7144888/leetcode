@@ -16,6 +16,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/A7144888/leetcode/tree/master/0001-two-sum) |
 | [0027-remove-element](https://github.com/A7144888/leetcode/tree/master/0027-remove-element) |
 | [0059-spiral-matrix-ii](https://github.com/A7144888/leetcode/tree/master/0059-spiral-matrix-ii) |
 | [0209-minimum-size-subarray-sum](https://github.com/A7144888/leetcode/tree/master/0209-minimum-size-subarray-sum) |
@@ -66,4 +67,8 @@
 |  |
 | ------- |
 | [0203-remove-linked-list-elements](https://github.com/A7144888/leetcode/tree/master/0203-remove-linked-list-elements) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/A7144888/leetcode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
