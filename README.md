@@ -65,6 +65,7 @@
 |  |
 | ------- |
 | [0203-remove-linked-list-elements](https://github.com/A7144888/leetcode/tree/master/0203-remove-linked-list-elements) |
+| [0838-design-linked-list](https://github.com/A7144888/leetcode/tree/master/0838-design-linked-list) |
 ## Recursion
 |  |
 | ------- |
@@ -77,4 +78,8 @@
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/A7144888/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+## Design
+|  |
+| ------- |
+| [0838-design-linked-list](https://github.com/A7144888/leetcode/tree/master/0838-design-linked-list) |
 <!---LeetCode Topics End-->
