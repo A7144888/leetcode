@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/design-linked-list">838. Design Linked List</a></h2><h3>Medium</h3><hr><p>Design your implementation of the linked list. You can choose to use a singly or doubly linked list.<br />
+<h2><a href="https://leetcode.com/problems/design-linked-list">707. Design Linked List</a></h2><h3>Medium</h3><hr><p>Design your implementation of the linked list. You can choose to use a singly or doubly linked list.<br />
 A node in a singly linked list should have two attributes: <code>val</code> and <code>next</code>. <code>val</code> is the value of the current node, and <code>next</code> is a pointer/reference to the next node.<br />
 If you want to use the doubly linked list, you will need one more attribute <code>prev</code> to indicate the previous node in the linked list. Assume all nodes in the linked list are <strong>0-indexed</strong>.</p>
 
@@ -41,3 +41,7 @@ myLinkedList.get(1);              // return 3
 	<li>Please do not use the built-in LinkedList library.</li>
 	<li>At most <code>2000</code> calls will be made to <code>get</code>, <code>addAtHead</code>, <code>addAtTail</code>, <code>addAtIndex</code> and <code>deleteAtIndex</code>.</li>
 </ul>
+
+***<mark>心得:</mark>***
+
+***這是第707.!***
