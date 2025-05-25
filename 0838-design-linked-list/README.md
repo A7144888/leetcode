@@ -52,7 +52,7 @@ myLinkedList.get(1);              // return 3
 
 還有就是這題要自己寫LinkedList的struct跟初始化，初始化時要建立虛擬頭節點
 ```
-	struct LinkedNode{
+    struct LinkedNode{
         int val;
         LinkedNode* next;
         LinkedNode(int val):val(val),next(nullptr){}
