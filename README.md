@@ -1,6 +1,8 @@
 # leetcode 
 用來放答對的題目，希望思路和心得能幫到大家，目前在跟著yangyang04大大的代碼隨想錄 leetcode刷題攻略學習中，會寫這些也是想教學相長，鞏固所學
 
+ps.有時候題號會有出入，直接改資料夾名稱有點麻煩，我會在README上用***這樣***特別說明
+
 [刷題攻略](https://github.com/youngyangyang04/leetcode-master)
 <!---LeetCode Topics Start-->
 # LeetCode Topics
