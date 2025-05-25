@@ -45,3 +45,23 @@ myLinkedList.get(1);              // return 3
 ***<mark>心得:</mark>***
 
 ***這是第707.!***
+
+第一次遇到這情況害我以為LeetHub沒抓到，搞了好久結果是題號不對，真邪門。
+
+這題要做的事情蠻多的，但基本上能分為:**1.查2.增3.刪**這三種，
+
+還有就是這題要自己寫LinkedList的struct跟初始化，初始化時要建立虛擬頭節點
+```
+	struct LinkedNode{
+        int val;
+        LinkedNode* next;
+        LinkedNode(int val):val(val),next(nullptr){}
+    };
+    
+    MyLinkedList() {
+        dummyHead=new LinkedNode(0);//虛擬頭節點
+        size=0;
+    }
+```
+
+待更
