@@ -48,20 +48,83 @@ myLinkedList.get(1);              // return 3
 
 第一次遇到這情況害我以為LeetHub沒抓到，搞了好久結果是題號不對，真邪門。
 
-這題要做的事情蠻多的，但基本上能分為:**1.查2.增3.刪**這三種，
+這題要做的事情蠻多的，但基本上能分為:**1.查2.增3.刪**三種，
 
-還有就是這題要自己寫LinkedList的struct跟初始化，初始化時要建立虛擬頭節點
+還有就是這題要自己寫LinkedList的struct跟初始化，初始化時要**建立虛擬頭節點**
+
+以及記得size(條件檢查時使用)要做++或--
 ```
-    struct LinkedNode{
+struct LinkedNode{
         int val;
         LinkedNode* next;
         LinkedNode(int val):val(val),next(nullptr){}
-    };
+ };
     
-    MyLinkedList() {
+ MyLinkedList() {
         dummyHead=new LinkedNode(0);//虛擬頭節點
         size=0;
-    }
+ }
 ```
 
-待更
+**查**
+
+先走到那個index再返回他的值
+
+走到第index個node的方法就是**每往前就把index-1**(這邊一定要index--而不是--index，執行的順序問題)
+
+也可以用for來做，總之能到就行。**到了之後直接return值**就好
+```
+int get(int index) {
+        if(index>(size-1)||index<0) return -1;//檢查是否超出範圍
+        
+        LinkedNode* cur=dummyHead->next;
+        
+        while(index--){
+            cur=cur->next;
+        }
+        return cur->val;
+}
+```
+
+**增**
+
+這題分三種add:加在<mark>頭、尾和特定index</mark>
+
+加在頭就是把新節點指到虛擬頭節點的下一個，再把虛擬頭節點指到新節點，可以看到順序不能反過來
+
+```
+	newNode->next=dummyHead->next;
+        dummyHead->next=newNode;
+```
+
+尾是把最後面的節點指到新節點，但要用`cur`先走到最後的節點
+
+```
+	LinkedNode* cur=dummyHead;
+        while(cur->next!=nullptr){
+            cur=cur->next;//讓cur走到最後面
+        }
+        cur->next=newNode;
+```
+
+特定index則是把新節點指到原本的下一個，再把原本的節點指到新節點，一樣先走到index
+
+```
+	LinkedNode* cur=dummyHead;
+        while(index--){
+            cur=cur->next;//讓cur走到第index個
+        }
+        newNode->next=cur->next;
+        cur->next=newNode;
+```
+
+**刪**
+
+跟203.差不多，只是改成了刪除對應index的節點，先用一個tmp紀錄當前的下一個，待會要用他刪掉，然後把指到下一個改成指到下下一個
+
+```
+	LinkedNode* tmp=cur->next;
+	cur->next=cur->next->next;
+        delete tmp;
+        tmp=nullptr;//delete只會釋放記憶體 要手動把指針設成NULL 不然會變野指針
+```
