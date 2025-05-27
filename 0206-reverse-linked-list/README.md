@@ -32,3 +32,22 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
+
+---
+***<mark>心得:</mark>***
+
+這題要用雙指針法，宣告一個`cur=head`和`pre=nullptr`，把`cur->next`指到`pre`就好，但記得先保存原先的cur->next，才能向下遍歷
+
+```
+ListNode* cur=head;
+        ListNode* pre=nullptr;
+        ListNode* tmp;
+
+        while(cur){
+            tmp=cur->next;
+            cur->next=pre;
+            pre=cur;
+            cur=tmp;
+        }
+        return pre;
+```
