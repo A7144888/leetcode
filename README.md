@@ -66,12 +66,14 @@ ps.有時候題號會有出入，直接改資料夾名稱有點麻煩，我會�
 ## Linked List
 |  |
 | ------- |
+| [0024-swap-nodes-in-pairs](https://github.com/A7144888/leetcode/tree/master/0024-swap-nodes-in-pairs) |
 | [0203-remove-linked-list-elements](https://github.com/A7144888/leetcode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/A7144888/leetcode/tree/master/0206-reverse-linked-list) |
 | [0838-design-linked-list](https://github.com/A7144888/leetcode/tree/master/0838-design-linked-list) |
 ## Recursion
 |  |
 | ------- |
+| [0024-swap-nodes-in-pairs](https://github.com/A7144888/leetcode/tree/master/0024-swap-nodes-in-pairs) |
 | [0203-remove-linked-list-elements](https://github.com/A7144888/leetcode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/A7144888/leetcode/tree/master/0206-reverse-linked-list) |
 ## Hash Table
